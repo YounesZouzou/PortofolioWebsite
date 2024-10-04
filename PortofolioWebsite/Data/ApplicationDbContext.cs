@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PortofolioWebsite.Models;
 
 
 namespace PortofolioWebsite.Data
@@ -10,7 +11,7 @@ namespace PortofolioWebsite.Data
         {
         }
         // The database will be read only
-        // public DbSet<ServerModel> Servers { get; set; }
-        // public DbSet<PlayerCountHistoryModel> PlayerCountHistories { get; set; }
+        public DbSet<ServerModel> Servers { get; set; }
+        public DbSet<PlayerCountHistoryModel> PlayerCountHistories { get; set; }
     }
 }

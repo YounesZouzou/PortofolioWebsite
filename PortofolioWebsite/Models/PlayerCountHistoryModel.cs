@@ -1,22 +1,26 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PortofolioWebsite.Models
 {
     public class PlayerCountHistoryModel
     {
-        [Key]
-        public long Id { get; } // The Id is read-only since postgres handles it
+        [Key] // Ensures that Entity Framework recognizes this as the primary key
+        [Column("id")]
+        public long Id { get; private set; }
 
         [ForeignKey("Server")]
-        public long ServerId { get; }
+        [Column("server_id")]
+        public long ServerId { get; private set; }
 
-        public short PlayerCount { get; }
+        [Column("playercount")]
+        public short PlayerCount { get; private set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime ObservedAt { get; } = DateTime.UtcNow;
+        [Column("observed_at")]
+        public DateTime ObservedAt { get; private set; }
 
-        // Used to unique identify it to a playercount
-        public virtual ServerModel Server { get; }
+        // Navigation property to the related server
+        public virtual ServerModel Server { get; set; }
     }
 }
