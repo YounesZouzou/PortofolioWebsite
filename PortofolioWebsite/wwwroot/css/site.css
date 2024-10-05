@@ -1,16 +1,15 @@
-/* Reset some default styling */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and overall layout */
+/* Body */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
+    background-color: #f7faff;
     color: #333;
-    overflow-x: hidden;
 }
 
 /* Header */
@@ -20,6 +19,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -45,7 +45,12 @@ nav ul {
             text-decoration: none;
             font-size: 18px;
             color: #333;
+            transition: color 0.3s;
         }
+
+            nav ul li a:hover {
+                color: #4a7fff;
+            }
 
 /* Hero Section */
 .hero {
@@ -53,10 +58,9 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px;
-    background-color: #f9f9f9;
-    background-image: url('your-background-lines.png'); /* Add your wavy background */
-    background-repeat: no-repeat;
-    background-position: left top;
+    background: linear-gradient(135deg, #6a9efb, #8fbffe);
+    color: #fff;
+    position: relative;
 }
 
 .hero-text {
@@ -64,13 +68,14 @@ nav ul {
 }
 
     .hero-text h1 {
-        font-size: 3em;
+        font-size: 3.5em;
         font-weight: bold;
-        color: #333;
     }
 
         .hero-text h1 .highlight {
-            color: #4a7fff; /* Similar to Aayush’s blue */
+            color: #ffffff;
+            background-color: #0048d4;
+            padding: 5px;
         }
 
     .hero-text p {
@@ -81,31 +86,168 @@ nav ul {
 .resume-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: #000;
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.social-icons {
-    margin-top: 20px;
-}
-
-    .social-icons a {
-        margin-right: 15px;
+    .resume-btn:hover {
+        background-color: #333;
     }
 
-    .social-icons img {
-        height: 30px;
-    }
-
-/* Hero Image */
-.hero-image {
-    max-width: 500px;
+.social-icons a {
+    margin-right: 15px;
+    transition: transform 0.3s ease;
 }
 
-    .hero-image img {
+.social-icons img {
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f0f5ff;
+}
+
+    .skills h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 150px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .skill-card img {
+        height: 50px;
+    }
+
+    .skill-card:hover {
+        transform: translateY(-10px);
+    }
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    background-color: #f7faff;
+    text-align: center;
+}
+
+    .projects h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+    .project-item img {
         width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a7fff;
+    text-decoration: none;
+}
+
+    .project-link:hover {
+        text-decoration: underline;
+    }
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #4a7fff;
+    color: white;
+    text-align: center;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #4a7fff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+/* Animation Keyframes */
+@keyframes flipDown {
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateAgain {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+/* Animation Classes */
+.hero-text .highlight {
+    display: inline-block;
+    animation: flipDown 0.8s ease-out;
+    transform-origin: top;
+    opacity: 1;
+}
+
+    .hero-text .highlight:hover {
+        animation: rotateAgain 1s ease-out 1;
+        transform-origin: top;
+        animation-iteration-count: 1;
     }

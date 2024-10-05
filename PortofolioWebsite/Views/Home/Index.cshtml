@@ -3,15 +3,58 @@
     ViewData["Title"] = "Home Page";
 }
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Hi, I am <span class="highlight">Younes Zouhairi</span>.</h1>
-        <p>I am a .NET developer</p>
-        <a href="" class="resume-btn">My Resume</a>
-        <div class="social-icons">
-            <a href="#"><img src="~/images/icon-linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="~/images/icon-github.png" alt="GitHub"></a>
-            <a href="#"><img src="~/images/icon-gmail.png" alt="Gmail"></a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I am <span class="highlight">Younes Zouhairi</span>.</h1>
+            <p>An aspiring .NET Developer hungry to show my worth!</p>
+            <a href="/resume.pdf" class="resume-btn">My Resume</a>
+            <p>But between us, i prefer my website</p>
+
+            <div class="social-icons">
+                <a href="#"><img src="~/images/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="~/images/github.png" alt="GitHub"></a>
+                <a href="#"><img src="~/images/mail.png" alt="Email"></a>
+            </div>
         </div>
-    </div>
-</section>
+        <div class="hero-image">
+        <img src="~/images/portrait.png" alt="portrait">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="~/images/skills/skill-csharp.png" alt="C#">
+                <h3>C#</h3>
+            </div>
+            <div class="skill-card">
+                <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                <h3>.NET</h3>
+            </div>
+            <div class="skill-card">
+            <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+            <img src="~/images/skills/skill-sql.png" alt="SQL">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="~/images/project1.png" alt="Project 1">
+                <h3>Project Name 1</h3>
+                <p>Description of the project.</p>
+                <a href="" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+

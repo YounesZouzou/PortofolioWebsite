@@ -1,32 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="" alt="Logo" />
-            <span>Your Name</span>
+            <img src="~/images/logo.png" alt="Logo" />
+            <span>Younes Zouhairi</span>
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#aboutme">About me</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <div class="container">
-        @RenderBody()
+        @RenderBody() 
     </div>
 
-    <footer>
-        <p>&copy; 2024 - Younes Zouhairi</p>
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>&copy; 2024 Younes Zouhairi</p>
     </footer>
+    <script src="~/js/site.js"></script>
 </body>
 </html>
