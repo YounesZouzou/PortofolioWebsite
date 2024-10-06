@@ -33,3 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// Open the Modal
+function openModal(modalId, img) {
+    var modal = document.getElementById(modalId);
+    var modalImg = modal.querySelector(".modal-content");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+}
+
+// Close the Modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
+

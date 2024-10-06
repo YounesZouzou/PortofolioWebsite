@@ -47,19 +47,23 @@
         </div>
     </section>
 
+
+
 <!-- Projects Section -->
 <section id="projects" class="projects">
     <h2>Projects</h2>
 
     <!-- Project 1 -->
     <div class="project-container">
-        <div class="project-info">
-            <img src="~/images/project1-screenshot.png" alt="Project 1 Screenshot" class="project-screenshot">
-            <div class="project-details">
-                <h3>Project Name 1</h3>
-                <p>A brief description of the project.</p>
-                <a href="https://github.com/project1" class="project-link">View on GitHub</a>
-            </div>
+        <div class="project-gallery">
+            <img src="~/images/project1/serverlist.png" alt="Project 1 Screenshot" class="project-screenshot" onclick="openModal('modal1', this)">
+            <img src="~/images/project1/serverlist.png" alt="Project 1 Screenshot" class="project-screenshot" onclick="openModal('modal1', this)">
+            <img src="~/images/project1/serverlist.png" alt="Project 1 Screenshot" class="project-screenshot" onclick="openModal('modal1', this)">
+        </div>
+        <div class="project-details">
+            <h3>Bannerlord server list</h3>
+            <p>An external videogame server list for players to check population outside the game.</p>
+            <a href="https://github.com/project1" class="project-link">View on GitHub</a>
         </div>
 
         <!-- Skills Used in This Project -->
@@ -84,45 +88,16 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Repeat for Project 2 -->
-    <div class="project-container">
-        <div class="project-info">
-            <img src="~/images/project2-screenshot.png" alt="Project 2 Screenshot" class="project-screenshot">
-            <div class="project-details">
-                <h3>Project Name 2</h3>
-                <p>A brief description of the project.</p>
-                <a href="https://github.com/project2" class="project-link">View on GitHub</a>
-            </div>
-        </div>
-
-        <!-- Skills Used in This Project -->
-        <div class="skills-used">
-            <h4>Skills Used in This Project</h4>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <img src="~/images/skills/skill-csharp.png" alt="C#">
-                    <h3>C#</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="~/images/skills/skill-dotnet.png" alt=".NET">
-                    <h3>.NET</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card">
-                    <img src="~/images/skills/skill-sql.png" alt="SQL">
-                    <h3>SQL</h3>
-                </div>
-            </div>
+        <!-- Modal for Project 1 -->
+        <div id="modal1" class="modal">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img class="modal-content" id="img01">
         </div>
     </div>
+
 
 </section>
 
-
-
+  
 
