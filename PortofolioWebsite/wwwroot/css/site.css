@@ -480,18 +480,66 @@ footer {
     }
 
         .experience-tasks li::before {
-            content: "\2022"; /* Unicode for bullet point */
-            color: #82aaff; /* Custom bullet color */
+            content: "\2022"; 
+            color: #82aaff;
             font-weight: bold;
             display: inline-block;
-            width: 20px; /* Space between bullet and text */
+            width: 20px;
             margin-right: 10px;
         }
 
 
-h2 {
-    margin-bottom: 30px;
-    color: #fff;
+
+
+/* Languages Section */
+.languages {
+    padding: 50px 0;
+    background-color: #2b486e;
+    text-align: center;
+    color: #f0f0f0;
 }
 
+    .languages h2 {
+        margin-bottom: 30px;
+        color: #f0f0f0;
+    }
+
+.languages-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.language-card {
+    width: 150px;
+    padding: 20px;
+    background-color: #406390;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #f0f0f0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .language-card img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .language-card h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .language-card p {
+        font-size: 1.2em;
+        margin: 0;
+        color: #82aaff;
+    }
+
+    .language-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
 
