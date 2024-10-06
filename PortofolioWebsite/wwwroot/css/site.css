@@ -126,7 +126,6 @@ body {
 
 .skills {
     padding: 50px 0;
-    background: linear-gradient(0deg, #1b263b, #2b486e);
     text-align: center;
     width: 100%;
 }
@@ -168,6 +167,7 @@ body {
     background-color: #1b263b;
     text-align: center;
     width: 100%;
+    background: linear-gradient(0deg, #1b263b, #2b486e);
 }
 
 .project-container {
@@ -393,3 +393,105 @@ footer {
         transform-origin: top;
         animation-iteration-count: 1;
     }
+
+
+.education-section {
+    padding: 1% 0;
+    background-color: #2b486e;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.education-box {
+    padding: 1%;
+    background-color: #406390;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 50%;
+    color: #fff;
+}
+
+.school-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.education-details {
+    text-align: left;
+}
+
+.education-box h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.education-box p {
+    font-size: 1.2em;
+}
+
+
+.experience-section {
+    padding: 50px 0;
+    background-color: #2b486e;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.experience-box {
+    padding: 20px;
+    background-color: #406390;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    max-width: 60%;
+    color: #fff;
+    text-align: left;
+}
+
+.company-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+
+.experience-details p {
+    font-size: 1.2em;
+}
+
+
+/* Bullet Points Styling */
+.experience-tasks {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+    .experience-tasks li {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+        .experience-tasks li::before {
+            content: "\2022"; /* Unicode for bullet point */
+            color: #82aaff; /* Custom bullet color */
+            font-weight: bold;
+            display: inline-block;
+            width: 20px; /* Space between bullet and text */
+            margin-right: 10px;
+        }
+
+
+h2 {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+
