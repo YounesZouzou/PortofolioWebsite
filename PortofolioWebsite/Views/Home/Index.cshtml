@@ -3,13 +3,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <!-- Hero Section -->
-    <section class="hero">
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-image">
+            <img src="~/images/portrait.png" alt="portrait">
+        </div>
         <div class="hero-text">
             <h1>Hi, I am <span class="highlight">Younes Zouhairi</span>.</h1>
             <p>An aspiring .NET Developer hungry to show my worth!</p>
             <a href="/resume.pdf" class="resume-btn">My Resume</a>
-            <p>But between us, i prefer my website</p>
+            <p>But between us, I prefer my website</p>
 
             <div class="social-icons">
                 <a href="#"><img src="~/images/linkedin.png" alt="LinkedIn"></a>
@@ -17,10 +20,9 @@
                 <a href="#"><img src="~/images/mail.png" alt="Email"></a>
             </div>
         </div>
-        <div class="hero-image">
-        <img src="~/images/portrait.png" alt="portrait">
-        </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -45,16 +47,82 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="~/images/project1.png" alt="Project 1">
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-container">
+        <div class="project-info">
+            <img src="~/images/project1-screenshot.png" alt="Project 1 Screenshot" class="project-screenshot">
+            <div class="project-details">
                 <h3>Project Name 1</h3>
-                <p>Description of the project.</p>
-                <a href="" class="project-link">View on GitHub</a>
+                <p>A brief description of the project.</p>
+                <a href="https://github.com/project1" class="project-link">View on GitHub</a>
             </div>
         </div>
-    </section>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills Used in This Project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-csharp.png" alt="C#">
+                    <h3>C#</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                    <h3>.NET</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-sql.png" alt="SQL">
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat for Project 2 -->
+    <div class="project-container">
+        <div class="project-info">
+            <img src="~/images/project2-screenshot.png" alt="Project 2 Screenshot" class="project-screenshot">
+            <div class="project-details">
+                <h3>Project Name 2</h3>
+                <p>A brief description of the project.</p>
+                <a href="https://github.com/project2" class="project-link">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills Used in This Project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-csharp.png" alt="C#">
+                    <h3>C#</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                    <h3>.NET</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-sql.png" alt="SQL">
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
 
