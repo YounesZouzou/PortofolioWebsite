@@ -5,64 +5,59 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #2b486e;
     color: #f0f0f0;
-    text-align: center;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: linear-gradient(135deg, #1b263b, #406390);
-    color: #f0f0f0;
+/* Top Navbar */
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1b263b;
+    padding: 10px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .logo img {
-        height: 50px;
-        margin-right: 10px;
-    }
-
-nav ul {
+    z-index: 1000;
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
-    nav ul li {
-        margin-left: 30px;
+    .top-navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
 
-        nav ul li a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #f0f0f0;
-            transition: color 0.3s;
+        .top-navbar ul li {
+            margin: 0 20px;
         }
 
-            nav ul li a:hover {
-                color: #82aaff;
+            .top-navbar ul li a {
+                color: #f0f0f0;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px 15px;
+                transition: background-color 0.3s, color 0.3s;
             }
 
-/* Hero Section */
+                .top-navbar ul li a:hover {
+                    background-color: #4a7fff;
+                    color: #fff;
+                }
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 100px 50px;
     background: linear-gradient(135deg, #1b263b, #2b486e);
+    width: 100%;
 }
 
 .hero-text h1 {
@@ -81,10 +76,9 @@ nav ul {
     margin-top: 20px;
 }
 
-/* Hero Image */
 .hero-image img {
     width: 40%;
-    height: 40%;
+    height: auto;
     border-radius: 20%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -111,24 +105,30 @@ nav ul {
         background-color: #3355ff;
     }
 
-.social-icons a {
-    margin-right: 15px;
-    transition: transform 0.3s ease;
+.social-icons {
+    display: flex;
+    justify-content: center;
 }
 
-.social-icons img {
-    height: 30px;
-    filter: invert(1);
-}
+    .social-icons a {
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+    }
 
-.social-icons a:hover {
-    transform: scale(1.2);
-}
+    .social-icons img {
+        height: 30px;
+        filter: invert(1);
+    }
 
-/* Skills Section */
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
+
 .skills {
     padding: 50px 0;
     background: linear-gradient(135deg, #1b263b, #2b486e);
+    text-align: center;
+    width: 100%;
 }
 
     .skills h2 {
@@ -138,10 +138,11 @@ nav ul {
     }
 
 .skills-grid {
-    display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .skill-card {
@@ -162,28 +163,29 @@ nav ul {
         transform: translateY(-10px);
     }
 
-/* Projects Section */
 .projects {
     padding: 50px 0;
     background-color: #1b263b;
     text-align: center;
+    width: 100%;
 }
 
-/* Project Container */
 .project-container {
-    margin-bottom: 40px;
     padding: 20px;
     background-color: #2b3e5e;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    margin: 1% auto;
 }
 
-/* Project Info */
 .project-info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .project-screenshot {
@@ -216,7 +218,6 @@ nav ul {
         text-decoration: underline;
     }
 
-/* Skills Used Section */
 .skills-used h4 {
     font-size: 1.5em;
     color: #f0f0f0;
@@ -228,6 +229,7 @@ nav ul {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .skill-card {
@@ -251,7 +253,6 @@ nav ul {
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
 
-/* Footer */
 footer {
     padding: 20px 0;
     background: linear-gradient(135deg, #162037, #1b263b);
@@ -259,7 +260,6 @@ footer {
     text-align: center;
 }
 
-/* Back to Top Button */
 #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -274,7 +274,6 @@ footer {
     z-index: 1000;
 }
 
-/* Animation Keyframes */
 @keyframes flipDown {
     0% {
         transform: rotateX(90deg);
@@ -297,7 +296,6 @@ footer {
     }
 }
 
-/* Animation Classes */
 .hero-text .highlight {
     display: inline-block;
     animation: flipDown 0.8s ease-out;
