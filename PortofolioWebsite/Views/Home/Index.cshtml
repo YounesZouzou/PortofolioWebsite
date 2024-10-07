@@ -1,8 +1,411 @@
 ﻿@{
+    Layout = "_NavbarLayout";
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <div class="hero-image">
+            <img src="~/images/portrait.png" alt="portrait">
+        </div>
+        <div class="hero-text">
+            <h1>Hi, I am <span class="highlight">Younes</span>.</h1>
+            <p>An aspiring .NET Developer hungry to show my worth!</p>
+            <a href="/resume.pdf" class="resume-btn">My Resume</a>
+            <p>But between us, I prefer my website</p>
+            <br/>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/younes-zouhairi/" target="_blank">
+                    <img src="~/images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/YounesZouzou" target="_blank">
+                    <img src="~/images/github.png" alt="GitHub">
+                </a>
+                <a href="mailto:younes24@live.fr">
+                    <img src="~/images/mail.png" alt="Email">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Languages Section -->
+<section id="languages" class="languages">
+    <h2>Languages</h2>
+    <div class="languages-grid">
+        <div class="language-card">
+            <img src="~/images/languages/dutch.png" alt="🇳🇱">
+            <h3>Dutch</h3>
+            <p>Native</p>
+        </div>
+        <div class="language-card">
+            <img src="~/images/languages/french.png" alt="🇫🇷">
+            <h3>French</h3>
+            <p>Fluent</p>
+        </div>
+        <div class="language-card">
+            <img src="~/images/languages/english.png" alt="🇬🇧">
+            <h3>English</h3>
+            <p>Very good</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="education-box">
+        <img src="~/images/ehb.png" alt="School Icon" class="school-icon">
+        <div class="education-details">
+            <h3>2020 - 2024</h3>
+            <p>Bachelor's in Computer Science at Erasmushogeschool brussel</p>
+        </div>
+    </div>
+</section>
+
+<section id="professional-experience" class="experience-section">
+    <h2>Professional Experience</h2>
+
+    <div class="experience-box">
+        <img src="~/images/apptweak.png" alt="Company Icon" class="company-icon">
+        <div class="experience-details">
+            <h3>March - May 2024</h3>
+            <h4>Backend Software Developer at Apptweak</h4>
+            <p>As part of my school curriculum, i had to stay 3 months in a company of my choosing and work on a project assigned to me alongside day to day tasks.</p>
+            <ul class="experience-tasks">
+                <li>Create solutions to fix and improve a previously non-functional service offered by Apptweak</li>
+                <li>Worked on upgrading legacy API system to a newer framework in Ruby</li>
+                <li>Solved numerous bugs and issues as part of my day-to-day job</li>
+            </ul>
+
+            <div class="skills-used">
+                <h4>Skills and technologies used during stay at the company</h4>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-ruby.png" alt="Ruby">
+                        <h3>Ruby</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-postgres.png" alt="postres">
+                        <h3>Postgres</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-dbeaver.png" alt="dbeaver">
+                        <h3>DBeaver</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-grafana.png" alt="Grafana">
+                        <h3>Grafana</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-kubernetes.png" alt="kubernetes">
+                        <h3>Kubernetes</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-manjaro.png" alt="manjaro">
+                        <h3>Manjaro</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-grape.png" alt="grape">
+                        <h3>Ruby Grape API</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="~/images/skills/skill-sql.png" alt="SQL">
+                        <h3>SQL</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-container">
+        <div class="project-gallery">
+            <img src="~/images/project1/details.png" class="project-screenshot" onclick="openModal('modal1', this)">
+            <img src="~/images/project1/serverlist.png" class="project-screenshot" onclick="openModal('modal1', this)">
+        </div>
+        <div class="project-details">
+            <h3>Bannerlord server list</h3>
+            <a href="https://bannerlord-hub.org/server-list" class="project-link">Website link</a>
+            <p>An external videogame server list for players to check population outside the game. Used daily by hundreds among the community.</p>
+            <a href="" class="project-link">Closed source currently</a>
+        </div>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills and technologies used in this project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-laravel.png" alt="laravel">
+                    <h3>Laravel (MVC)</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-digitalocean.png" alt="digitalocean">
+                    <h3>Digital ocean</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-ubuntu.png" alt="ubuntu">
+                    <h3>Ubuntu</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dbeaver.png" alt="dbeaver">
+                    <h3>DBeaver</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-php.png" alt="php">
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-postgres.png" alt="postres">
+                    <h3>Postgres</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-html.png" alt="html">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-css.png" alt="css">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Project 1 -->
+        <div id="modal1" class="modal">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-container">
+        <div class="project-gallery">
+            <img src="~/images/project2/fetching.png" class="project-screenshot" onclick="openModal('modal2', this)">
+            <img src="~/images/project2/database.png" class="project-screenshot" onclick="openModal('modal2', this)">
+        </div>
+        <div class="project-details">
+            <h3>Bannerlord server fetcher</h3>
+            <p>In order to provide up to date data to the bannerlord server list, i had to create a program that fetches this data every minute. The problem is that this API is not publicly available or documented thus i had to tinker with a .NET disassembler to find these calls. Data is then stored in my database for further use.</p>
+            <a href="" class="project-link">Closed source currently</a>
+        </div>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills and technologies used in this project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-digitalocean.png" alt="digitalocean">
+                    <h3>Digital ocean</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-steam.png" alt="steam">
+                    <h3>Steam API</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-ubuntu.png" alt="ubuntu">
+                    <h3>Ubuntu</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dnspy.png" alt="dnspy">
+                    <h3>dnSpy</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dbeaver.png" alt="dbeaver">
+                    <h3>DBeaver</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-postgres.png" alt="postres">
+                    <h3>Postgres</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-api.png" alt="API">
+                    <h3>API</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-json.png" alt="JSON">
+                    <h3>JSON</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-nodejs.png" alt="nodejs">
+                    <h3>NodeJS</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Project 2 -->
+        <div id="modal2" class="modal">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img class="modal-content" id="img02">
+        </div>
+    </div>
+
+
+    <!-- Project 3 -->
+    <div class="project-container">
+        <div class="project-details">
+            <h3>This website</h3>
+            <p>The website you're navigating right now!</p>
+            <a href="https://github.com/YounesZouzou/PortofolioWebsite" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills and technologies used in this project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-aspnet.png" alt="aspnet">
+                    <h3>ASP.NET (MVC)</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                    <h3>.NET</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-digitalocean.png" alt="digitalocean">
+                    <h3>Digital ocean</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-postgres.png" alt="postres">
+                    <h3>Postgres</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-html.png" alt="html">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-css.png" alt="css">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Project 4 -->
+    <div class="project-container">
+        <div class="project-gallery">
+            <img src="~/images/project4/extract.png" class="project-screenshot" onclick="openModal('modal4', this)">
+            <img src="~/images/project4/troops.png" class="project-screenshot" onclick="openModal('modal4', this)">
+        </div>
+        <div class="project-details">
+            <h3>Full invasion wikipedia (WIP)</h3>
+            <p>A wikipedia page for a mod on the videogame bannerlord. Extracting all the required data requires me to use C# and dnSpy. This will then be added to my laravel website.</p>
+            <a href="" class="project-link">Closed source currently</a>
+        </div>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills and technologies used in this project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-csharp.png" alt="C#">
+                    <h3>C#</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                    <h3>.NET</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-dnspy.png" alt="dnspy">
+                    <h3>dnSpy</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-json.png" alt="JSON">
+                    <h3>JSON</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Project 4 -->
+        <div id="modal4" class="modal">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img class="modal-content" id="img04">
+        </div>
+    </div>
+
+
+    <!-- Project 5 -->
+    <div class="project-container">
+        <div class="project-gallery">
+            <img src="~/images/project5/bot.png" class="project-screenshot" onclick="openModal('modal5', this)">
+        </div>
+        <div class="project-details">
+            <h3>Bannerlord discord server list bot (WIP)</h3>
+            <p>Following the release of my website, i have had dozen of requests to make a discord bot in order to display live player count for servers. Loving the idea to make things that make a difference, i am in the progress of making it.</p>
+            <a href="" class="project-link">Closed source currently</a>
+        </div>
+
+        <!-- Skills Used in This Project -->
+        <div class="skills-used">
+            <h4>Skills and technologies used in this project</h4>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-digitalocean.png" alt="digitalocean">
+                    <h3>Digital ocean</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-python.png" alt="python">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <img src="~/images/skills/skill-postgres.png" alt="postres">
+                    <h3>Postgres</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Project 5 -->
+        <div id="modal5" class="modal">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <img class="modal-content" id="img05">
+        </div>
+    </div>
+
+
+
+    <!-- Skills Section -->
+    @*  
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="~/images/skills/skill-csharp.png" alt="C#">
+                <h3>C#</h3>
+            </div>
+            <div class="skill-card">
+                <img src="~/images/skills/skill-dotnet.png" alt=".NET">
+                <h3>.NET</h3>
+            </div>
+            <div class="skill-card">
+                <img src="~/images/skills/skill-javascript.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <img src="~/images/skills/skill-sql.png" alt="SQL">
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+    *@
+</section>
+
+  
+

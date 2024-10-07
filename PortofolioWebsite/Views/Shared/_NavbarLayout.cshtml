@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+    <nav class="top-navbar">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#professional-experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        @RenderBody()
+    </div>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
