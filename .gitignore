@@ -362,5 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# Ignore the images folder inside wwwroot
-PortofolioWebsite/wwwroot/images/
+# Ignore the portrait for privacy reasons
+PortofolioWebsite/wwwroot/images/portrait.png

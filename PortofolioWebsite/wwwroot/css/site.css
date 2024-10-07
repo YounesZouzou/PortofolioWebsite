@@ -172,7 +172,7 @@ body {
 
 .project-container {
     padding: 30px;
-    background-color: #2b3e5e;
+    background-color: #406390;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
@@ -233,7 +233,7 @@ body {
 }
 
 .project-screenshot {
-    width: 300px;
+    width: 30%;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
